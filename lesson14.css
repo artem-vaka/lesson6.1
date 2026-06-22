@@ -1,11 +1,9 @@
-/* ==========================================================================
-   RESET & GENERAL STYLES (Скидання стилів та базові налаштування)
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* Схожий на книжковий стиль макета */
+    font-family: 'Georgia', serif; 
 }
 
 body {
@@ -21,9 +19,7 @@ body {
     position: relative;
 }
 
-/* ==========================================================================
-   HERO SECTION (Головний баннер з Гаррі Поттером)
-   ========================================================================== */
+
 .hero-section {
     height: 100vh;
     min-height: 650px;
@@ -31,31 +27,28 @@ body {
     position: relative;
     padding-top: 20px;
     
-    /* КАРТИНКА: Пряме посилання на ваше зображення без перейменування */
+
   background-image: url("../images/Group 48 1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #12232f; /* Запасний колір */
+    background-color: #12232f; 
 }
-/* NAVBAR (Навігація на всю ширину екрана) */
-/* NAVBAR (Навігація точно як на макеті — на всю ширину) */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    /* Розтягуємо блок на всю ширину екрана */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     
-    /* Напівпрозорий темний фон як на макеті */
-    background-color: rgba(9, 17, 24, 0.5); /* 50% прозорості */
+
+    background-color: rgba(9, 17, 24, 0.5); 
     
-    /* Внутрішні відступи: 20px зверху/знизу та по боках */
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -67,23 +60,21 @@ body {
     width: 100%;
     z-index: 100;
     
-    background-color: rgba(9, 17, 24, 0.5); /* Напівпрозорий фон */
+    background-color: rgba(9, 17, 24, 0.5);
     padding: 20px 40px; 
      
 }
 
 
-/* HERO CONTENT (Блок із цитатою та кнопкою Join) */
 .hero-content {
-    /* Додаємо більший відступ зверху, щоб меню не перекривало текст */
     padding-top: 160px; 
     max-width: 450px;
     position: relative;
-    z-index: 10; /* Піднімаємо текст вище над фоном */
+    z-index: 10;
     padding-top: 160px; 
     max-width: 450px;
     position: relative;
-    z-index: 10; /* Піднімаємо текст вище над фоном */
+    z-index: 10; 
 
 }
 
@@ -95,7 +86,7 @@ body {
 
 .logo img, .footer-logo img {
     display: block;
-    max-height: 40px; /* Налаштуйте висоту під ваш логотип-картинку */
+    max-height: 40px; 
     width: auto;
 }
 
@@ -140,7 +131,6 @@ body {
     color: #ffffff;
 }
 
-/* HERO CONTENT (Цитата та кнопка Join) */
 .hero-content {
     margin-top: 120px;
     max-width: 450px;
@@ -178,7 +168,6 @@ body {
     color: #ffffff;
 }
 
-/* SOCIAL ICONS (Іконки соцмереж внизу баннера) */
 .social-icons {
     position: absolute;
     bottom: 30px;
@@ -188,42 +177,37 @@ body {
 }
 
 .social-icons a img {
-    width: 24px; /* Розмір іконок Instagram, YouTube, Twitter */
+    width: 24px; 
     height: 24px;
     object-fit: contain;
 }
-/* Блок, де лежать іконки (ставимо його в праве нижнє з'єднання) */
+
 .social-icons {
     position: absolute;
     bottom: 40px;
     right: 40px;
     display: flex;
-    gap: 15px; /* Відступ між самими іконками */
+    gap: 15px;
     z-index: 10;
 }
 
-/* Стилі для самих картинок всередині посилань */
 .social-icons a img {
-    width: 24px;         /* Точна ширина іконки (можна змінити на 30px, якщо малі) */
-    height: 24px;        /* Точна висота іконки */
-    object-fit: contain; /* Щоб картинка не стискалася і не деформувалася */
-    transition: transform 0.3s ease; /* Для плавної анімації */
+    width: 24px;   
+    height: 24px;       
+    object-fit: contain; 
+    transition: transform 0.3s ease; 
 }
 
-/* Ефект при наведенні мишкою (іконка буде трохи збільшуватися) */
 .social-icons a img:hover {
     transform: scale(1.2); 
 }
 
 .youtube-icon {
-    width: 30px; /* Трохи більша іконка для YouTube */
+    width: 30px;
     height: 30px;
     
 }
 
-/* ==========================================================================
-   QUOTE SECTIONS (Блоки з цитатами та золотим логотипом HP)
-   ========================================================================== */
 .quote-section {
     padding: 80px 0;
     text-align: center;
@@ -246,46 +230,35 @@ body {
     color: #556677;
 }
 
-/* Золотий логотип HP під цитатами */
 .hp-badge {
     display: block;
     width: 60px; /* Ширина логотипу */
     height: 60px; /* Висота логотипу */
     margin: 25px auto 0 auto;
-    text-indent: -9999px; /* Ховає звичайний текст, залишає тільки картинку */
-    
-    /* КАРТИНКА: Золотий знак HP */
+    text-indent: -9999px; 
     background-image: url("../images/лого-removebg-preview.png"); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* ==========================================================================
-   TRAILER SECTION (Секція з відео/кадром з фільму)
-   ========================================================================== */
 .trailer-section {
     height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* КАРТИНКА: Кадр з фільму як фон для трейлера */
     background-image: url("../images/Rectangle 10.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #1b2b3a; /* Запасний колір */
+    background-color: #1b2b3a; 
 }
 
 .btn-trailer {
-    /* Магія позиціонування: ставимо кнопку в центр картинки */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Зсуває саму кнопку рівно в центр */
-    
-    /* Стилі зовнішнього вигляду кнопки */
+    transform: translate(-50%, -50%);
     background: transparent;
     border: 2px solid #002244;
     background-color: #00112c;
@@ -294,20 +267,18 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-/* ==========================================================================
-   SPELLS SECTION (Блок із заклинаннями)
-   ========================================================================== */
+
 .spells-section {
     padding: 60px 0;
     text-align: center;
     color: #ffffff;
     
-    /* КАРТИНКА: Задній фон замку Хогвартс (Темний градієнт поверх картинки для читабельності) */
+
     background-image: url("../images/Rectangle 20.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #0d161f; /* Запасний колір */
+    background-color: #0d161f; 
 }
 
 .spells-section h2 {
@@ -324,7 +295,7 @@ body {
 }
 
 .spell-card {
-    background-color: rgba(239, 239, 239, 0.773); /* Напівпрозоре скло */
+    background-color: rgba(239, 239, 239, 0.773);
     backdrop-filter: blur(30px);
     padding: 30px 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -338,19 +309,17 @@ body {
     color: #000000;
 }
 
-/* Іконка всередині кожної картки заклинання */
 .spell-icon {
     display: block;
     width: 30px; /* Ширина маленького знака заклинання */
     height: 30px; /* Висота */
     margin: 0 auto 15px auto;
     
-    /* КАРТИНКА: Маленький золотий трикутний знак магії */
     background-image: url("../images/deathly-hallows-a-symbol-from-the-harry-potter-vector-43546780_2-removebg-preview.png"); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 40px; /* Розмір іконки заклинання */
+    width: 40px;
     height: 40px;
 }
 
@@ -360,9 +329,6 @@ body {
     color: #000000;
 }
 
-/* ==========================================================================
-   FOOTER (Підвал сайту)
-   ========================================================================== */
 .footer {
     background-color: #091118;
     color: #ffffff;
@@ -394,9 +360,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* ==========================================================================
-   RESPONSIVE (Адаптивність для мобільних пристроїв)
-   ========================================================================== */
 @media (max-width: 768px) {
     .spells-grid {
         grid-template-columns: 1fr;
